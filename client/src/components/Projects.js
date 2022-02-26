@@ -16,7 +16,7 @@ export default function Projects() {
                 <div className="row project-row">
                   {/* <!-- Mentor Monkey --> */}
                     <div className="col box">
-                      <a href="https://secret-falls-29125.herokuapp.com/" target="_blank">
+                      <a href="https://secret-falls-29125.herokuapp.com/" rel='noopener'>
                         <div className="img-container">
                           <div className="live-demo">Live Demo</div>
                         <img class="img" src={MentorMonkey} className="card-img-top" alt="Mentor Monkey Website"/>
