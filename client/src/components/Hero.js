@@ -7,7 +7,7 @@ export default function Hero() {
         <h1>Steven Lofquist</h1>
           <h2 id="fullstack-dev">Fullstack Developer</h2>
             <div>
-              <a id="resume" target="_" href="../public/steven_lofquist_resume.pdf">Resume</a>
+              <a id="resume" target="_" href="../assets/steven_lofquist_resume.pdf">Resume</a>
             </div>
       </div>
     </div>

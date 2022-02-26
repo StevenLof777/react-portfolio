@@ -179,6 +179,7 @@ header {
     text-align: center;
     color: white;
     background-color: rgb(84, 84, 84);
+    width: 100%;
 }
 
 .live-demo {
