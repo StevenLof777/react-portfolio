@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/react-portfolio/static/css/main.0db38030.css",
+    "main.js": "/react-portfolio/static/js/main.a03a2f42.js",
+    "static/media/dope_horoscope.png": "/react-portfolio/static/media/dope_horoscope.fb860910ba4070d0f68b.png",
+    "static/media/MentorMonkey.png": "/react-portfolio/static/media/MentorMonkey.fa0e851ee47a27fe5257.png",
+    "static/media/weatherdashboard.PNG": "/react-portfolio/static/media/weatherdashboard.50706b6abc8ceca8d920.PNG",
+    "static/media/daily-planner.png": "/react-portfolio/static/media/daily-planner.c72c3244fc2ed2d8552f.png",
+    "index.html": "/react-portfolio/index.html",
+    "main.0db38030.css.map": "/react-portfolio/static/css/main.0db38030.css.map",
+    "main.a03a2f42.js.map": "/react-portfolio/static/js/main.a03a2f42.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0db38030.css",
+    "static/js/main.a03a2f42.js"
+  ]
+}
