@@ -54,9 +54,9 @@ function ContactForm() {
                 </form>
 
                 <div className="social-container">
-                        <a className="social fab fa-github" href="https://github.com/StevenLof777" target="_blank"></a>
-                        <a className="social fab fa-linkedin-in" href="https://www.linkedin.com/in/steven-lofquist-49312a19b/" target="_blank"></a>
-                        {/* <a className="social fas fa-envelope" href="lof.steven@gmail.com" target="_blank"></a> */}
+                        <a className="social fab fa-github" href="https://github.com/StevenLof777" rel="noopener">/</a>
+                        <a className="social fab fa-linkedin-in" href="https://www.linkedin.com/in/steven-lofquist-49312a19b/" rel="noopener">/</a>
+                        {/* <a className="social fas fa-envelope" href="lof.steven@gmail.com" rel="noopener"></a> */}
                 </div>
         </div>
 
