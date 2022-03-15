@@ -2,7 +2,7 @@
 // import {Nav, Hero, AboutMe, Skills, Projects, Footer}  from './components';
 
 import React from 'react';
-import Nav from './components/Nav';
+import Nav from './components/Navigation';
 import Hero  from './components/Hero';
 import AboutMe  from './components/AboutMe';
 import Skills  from './components/Skills';
