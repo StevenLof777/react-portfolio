@@ -99,12 +99,25 @@ export default function Projects() {
                 <h3 className="project-header">Projects</h3>
                 <div className="row project-row">
 
+
+
+
+
+
                   {/* <!-- Mentor Monkey --> */}
                     <div className="col box">                      
                       <a href="https://secret-falls-29125.herokuapp.com/" rel='noopener noreferrer'>
+
+                        {/* Wrapper */}
                         <div className="img-container">
-                          <div className="live-demo">Live Demo</div>
-                        <img src={MentorMonkey} className="img card-img-top" alt="Mentor Monkey Website"/>
+
+                        {/* Img */}
+                        <img src={MentorMonkey} className="img blur" alt="Mentor Monkey Website"/>
+
+                        {/* Content */}
+                        <div className="live-demo fade">Live Demo</div>
+                        
+                        
                         </div>
                       </a>
                         <div className="card-body row">
@@ -123,6 +136,13 @@ export default function Projects() {
                           
                         </div>
                     </div>
+
+
+
+
+
+.
+
 
                     {/* <!-- Dope Horoscope --> */}
                     <div className="col box">

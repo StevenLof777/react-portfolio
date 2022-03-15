@@ -15,6 +15,7 @@ export default function App() {
     <div>
       <Nav />
       <Hero />
+
       <AboutMe />
       <Skills />
       <Projects />

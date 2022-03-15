@@ -46,9 +46,6 @@ nav {
     background-color: white;
 }
 
-/* .nav-bar-wrapper{
-
-} */
 
 .hero {
     color: white;
@@ -104,6 +101,7 @@ nav {
 }
 
 .box {
+    padding-top: 1rem;
     border-radius: 5px;
     position: relative;
     margin: 3rem;
@@ -262,48 +260,46 @@ label {
 }
 
 .img-container {
-    margin-top: .8rem;
-    cursor: pointer;
     position: relative;
-    text-align: center;
+    overflow: hidden;
+  }
+  
+  .img-container > .img {
+    display: block;
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    object-position: center;
+  }
+  
+  .img-container > .live-demo {
+    position: absolute;
+    inset: 0;
     color: white;
-    background-color: rgb(84, 84, 84);
-    
+    font-size: 5rem;
+    padding: 1rem;
+    background: rgba(0, 0, 0, 0.432);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+
+.img-container > .img,
+.img-container > .live-demo {
+    transition: 200ms ease-in-out;
 }
 
-.live-demo {
-    font-size: xx-large;
-    text-decoration: none;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+.img-container>.live-demo.fade{
     opacity: 0;
 }
 
-/* Live demo part */
-.img-container:hover .live-demo{
+.img-container:hover > img.blur {
+    filter: blur(5px);
+  }
+
+.img-container:hover>.live-demo.fade{
     opacity: 1;
-    color: white;
-}
-
-.img-container:hover {
-    opacity: 1;
-    color: white;
-    /* filter: blur(4px); */
-    transition-duration: 100ms
-}
-
-.img {
-    
-    max-width:100%;
-    max-height:100%;
-}
-
-.img:hover {
-    opacity: 0.3;
-    filter: blur(4px);
-    transition-duration: 100ms
 }
 
 #resume {

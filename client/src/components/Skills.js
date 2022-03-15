@@ -45,6 +45,7 @@ export default function Skills() {
           <div className="col"><i className="devicon-mongodb-plain bruh-i colored"></i> Mongodb</div>
           <div className="col"><i className="devicon-react-original bruh-i colored"></i> React</div>
           <div className="col"><i className="devicon-javascript-plain bruh-i colored"></i> JavaScript</div>
+          {/* <div className="col"><i class="devicon-vscode-plain colored"></i> vscode</div> */}
         </div>
       </div>
     </div>
