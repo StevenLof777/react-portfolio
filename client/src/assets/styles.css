@@ -200,7 +200,19 @@ header {
 
 .lang-icons{
     text-align: center;
-    font-size: 5em;
+    font-size: 1.7em;
+    /* font-weight: 300; */
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.skill-ul{
+    list-style: none;
+    text-align: center;
+}
+
+.bruh-i{
+    font-size: 3rem;
 }
 
 /* Footer */
