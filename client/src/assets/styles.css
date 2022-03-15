@@ -107,7 +107,7 @@ nav {
     margin: 3rem;
     min-width: 10rem;
     width: 100%;
-    max-height: 38rem;
+    /* max-height: 38rem; */
     background-color: white;
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.172);
 }

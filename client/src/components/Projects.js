@@ -90,61 +90,108 @@ export default function Projects() {
     
 
     <div id="project-section">
-
-
-
         <div className="container">
           <div className="row project-row">
               {/* <!-- PROJECTS --> */}
                 <h3 className="project-header">Projects</h3>
-                <div className="row project-row">
+                
+
+                {/* <!-- Mentor Monkey --> */}
+                  <div className="col box box-row-1">                      
+                    <a href="https://secret-falls-29125.herokuapp.com/" rel='noopener noreferrer'>
+
+                      <div className="img-container">
+                      <img src={MentorMonkey} className="img blur" alt="Mentor Monkey Website"/>
+                      <div className="live-demo fade">Live Demo</div>
+                      </div>
+                    </a>
+                      <div className="card-body row">
+                        <h5 className="col card-title-bruh">MentorMonkey</h5>
+                        <Col></Col>
+                        <Button className='col' variant="primary" onClick={() => setModalShow(true)}>
+                          Learn More
+                        </Button>
+                        <MentorMonkeyModal
+                          show={modalShow}
+                          onHide={() => setModalShow(false)}
+                        />
+                      </div>
+                  </div>
+
+                {/* <!-- Mentor Monkey --> */}
+                  <div className="col box">                      
+                    <a href="https://secret-falls-29125.herokuapp.com/" rel='noopener noreferrer'>
+
+                      <div className="img-container">
+                      <img src={MentorMonkey} className="img blur" alt="Mentor Monkey Website"/>
+                      <div className="live-demo fade">Live Demo</div>
+                      </div>
+                    </a>
+                      <div className="card-body row">
+                        <h5 className="col card-title-bruh">MentorMonkey</h5>
+                        <Col></Col>
+                        <Button className='col' variant="primary" onClick={() => setModalShow(true)}>
+                          Learn More
+                        </Button>
+                        <MentorMonkeyModal
+                          show={modalShow}
+                          onHide={() => setModalShow(false)}
+                        />
+                      </div>
+                  </div>
+                  </div>
 
 
+              <div className="row project-row">
 
+              <div className="col box">                      
+                    <a href="https://secret-falls-29125.herokuapp.com/" rel='noopener noreferrer'>
 
+                      <div className="img-container">
+                      <img src={MentorMonkey} className="img blur" alt="Mentor Monkey Website"/>
+                      <div className="live-demo fade">Live Demo</div>
+                      </div>
+                    </a>
+                      <div className="card-body row">
+                        <h5 className="col card-title-bruh">MentorMonkey</h5>
+                        <Col></Col>
+                        <Button className='col' variant="primary" onClick={() => setModalShow(true)}>
+                          Learn More
+                        </Button>
+                        <MentorMonkeyModal
+                          show={modalShow}
+                          onHide={() => setModalShow(false)}
+                        />
+                      </div>
+                  </div>
 
+                {/* <!-- Mentor Monkey --> */}
+                  <div className="col box">                      
+                    <a href="https://secret-falls-29125.herokuapp.com/" rel='noopener noreferrer'>
 
-                  {/* <!-- Mentor Monkey --> */}
-                    <div className="col box">                      
-                      <a href="https://secret-falls-29125.herokuapp.com/" rel='noopener noreferrer'>
-
-                        {/* Wrapper */}
-                        <div className="img-container">
-
-                        {/* Img */}
-                        <img src={MentorMonkey} className="img blur" alt="Mentor Monkey Website"/>
-
-                        {/* Content */}
-                        <div className="live-demo fade">Live Demo</div>
-                        
-                        
-                        </div>
-                      </a>
-                        <div className="card-body row">
-                          <h5 className="col card-title-bruh">MentorMonkey</h5>
-
-                          <Col></Col>
-                          
-                          <Button className='col' variant="primary" onClick={() => setModalShow(true)}>
-                            Learn More
-                          </Button>
-
-                          <MentorMonkeyModal
-                            show={modalShow}
-                            onHide={() => setModalShow(false)}
-                          />
-                          
-                        </div>
-                    </div>
-
-
-
+                      <div className="img-container">
+                      <img src={MentorMonkey} className="img blur" alt="Mentor Monkey Website"/>
+                      <div className="live-demo fade">Live Demo</div>
+                      </div>
+                    </a>
+                      <div className="card-body row">
+                        <h5 className="col card-title-bruh">MentorMonkey</h5>
+                        <Col></Col>
+                        <Button className='col' variant="primary" onClick={() => setModalShow(true)}>
+                          Learn More
+                        </Button>
+                        <MentorMonkeyModal
+                          show={modalShow}
+                          onHide={() => setModalShow(false)}
+                        />
+                      </div>
+                  </div>
 
 
 .
 
 
-                    {/* <!-- Dope Horoscope --> */}
+                    {/* <!-- Dope Horoscope --> 
                     <div className="col box">
                       <a href="https://stevenlof777.github.io/dope-horoscope/" rel="noopener">
                       <div className="img-container">                        
@@ -159,7 +206,7 @@ export default function Projects() {
                         </div>
                       </div>
                   </div>
-                  {/* <!-- Weather Dashboard --> */}-
+                  {/* <!-- Weather Dashboard -->
                   <div className="col box">
                       <a href="https://stevenlof777.github.io/daily-planner/" rel="noopener">
                       <div className="img-container"> 
@@ -174,7 +221,7 @@ export default function Projects() {
                         </div>
                       
                     </div>
-                    {/* <!-- Daily Planner --> */}
+                    {/* <!-- Daily Planner -->
                     <div className="col box">
                       <a href="https://stevenlof777.github.io/daily-planner/" rel="noopener">
                       <div className="img-container"> 
@@ -187,9 +234,8 @@ export default function Projects() {
                           <p className="card-text">A simple calendar app for scheduling your work day. If the time block is gray then it is the past, if the time block is green then it's the future, if the time block is red then it's the present.</p>
                           <a href="https://github.com/StevenLof777/daily-planner/" rel="noopener" className="btn btn-primary project-btn">GitHub Repository</a>
                         </div>
-                      
+                       */}
                     </div>
-                  </div>
                 </div>
             </div>        
   );
