@@ -255,6 +255,14 @@ label {
     padding-bottom: 5rem;
 }
 
+.col-btn{
+    text-align: right;
+}
+
+.card-btn{
+    max-width: 50%;
+}
+
 .card-title-bruh {
     line-height: 150%;
 }

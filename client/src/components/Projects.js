@@ -106,33 +106,35 @@ export default function Projects() {
                       </div>
                     </a>
                       <div className="card-body row">
-                        <h5 className="col card-title-bruh">MentorMonkey</h5>
-                        <Col></Col>
-                        <Button className='col' variant="primary" onClick={() => setModalShow(true)}>
+                        <h5 className="col card-title-bruh">MentorMonkey Chat App</h5>
+                        <Col className='col-btn'>
+                        <Button className='card-btn' variant="primary" onClick={() => setModalShow(true)}>
                           Learn More
                         </Button>
                         <MentorMonkeyModal
                           show={modalShow}
                           onHide={() => setModalShow(false)}
                         />
+                        </Col>
                       </div>
                   </div>
 
-                {/* <!-- Mentor Monkey --> */}
+                {/* <!-- Dope Horoscope --> */}
                   <div className="col box">                      
-                    <a href="https://secret-falls-29125.herokuapp.com/" rel='noopener noreferrer'>
+                    <a href="https://stevenlof777.github.io/dope-horoscope/" rel='noopener noreferrer'>
 
                       <div className="img-container">
-                      <img src={MentorMonkey} className="img blur" alt="Mentor Monkey Website"/>
+                      <img src={dopeHoroscope} className="img blur" alt="Dope Horoscope png"/>
                       <div className="live-demo fade">Live Demo</div>
                       </div>
                     </a>
                       <div className="card-body row">
-                        <h5 className="col card-title-bruh">MentorMonkey</h5>
-                        <Col></Col>
-                        <Button className='col' variant="primary" onClick={() => setModalShow(true)}>
+                        <h5 className="col card-title-bruh">Dope Horoscope</h5>
+                        <Col className='col-btn'>
+                        <Button className='card-btn' variant="primary" onClick={() => setModalShow(true)}>
                           Learn More
                         </Button>
+                        </Col>
                         <MentorMonkeyModal
                           show={modalShow}
                           onHide={() => setModalShow(false)}
