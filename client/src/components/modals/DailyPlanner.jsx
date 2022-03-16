@@ -1,6 +1,6 @@
 import {Modal, Row, Col} from 'react-bootstrap'
 
- export const DopeHoroscopeModal = (props) => {
+ export const DailyPlannerModal = (props) => {
     return (
       <Modal
         {...props}
@@ -10,7 +10,7 @@ import {Modal, Row, Col} from 'react-bootstrap'
       >
         <Modal.Header closeButton>
           <Modal.Title id="contained-modal-title-vcenter">
-            Dope Horoscope
+            Daily Planner
           </Modal.Title>
         </Modal.Header>
         <Modal.Body>

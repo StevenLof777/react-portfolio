@@ -1,7 +1,9 @@
 import React, { useState } from 'react';
 import { MentorMonkeyModal } from './modals/MentorMonkey';
 import { DopeHoroscopeModal } from './modals/DopeHoroscope';
-import{ Modal, Button, Row, Col }from 'react-bootstrap'
+import { DailyPlannerModal } from './modals/DailyPlanner';
+import { WeatherDashBoardModal } from './modals/WeatherDashboard';
+import{ Button, Col }from 'react-bootstrap'
 import MentorMonkey from '../assets/MentorMonkey.png';
 import dopeHoroscope from '../assets/dope_horoscope.png';
 import weatherDashboard from '../assets/weather-dashboard.png';
@@ -11,6 +13,8 @@ import dailyPlanner from '../assets/daily-planner.png';
 export default function Projects() {
   const [mentorShow, setMentorShow] = React.useState(false)
   const [dopeShow, setDopeShow] = React.useState(false)
+  const [weatherShow, setWeatherShow] = React.useState(false)
+  const [dailyShow, setDailyShow] = React.useState(false)
   // const [modalShow, setModalShow] = React.useState(false)
 
   return (
@@ -86,15 +90,16 @@ export default function Projects() {
                     </a>
                     <div className="card-body row">
                         <h5 className="col card-title-bruh">Weather Dasboard</h5>
-                        {/* <Col className='col-btn'>
-                        <Button className='card-btn' variant="primary" onClick={() => setModalShow(true)}>
+                        <Col className='col-btn'>
+                        <Button className='card-btn' variant="primary" onClick={() => setWeatherShow(true)}>
                           Learn More
                         </Button>
-                        </Col> */}
-                        {/* <MentorMonkeyModal
-                          show={modalShow}
-                          onHide={() => setModalShow(false)}
-                        /> */}
+                        </Col>
+                        
+                        <WeatherDashBoardModal
+                          show={weatherShow}
+                          onHide={() => setWeatherShow(false)}
+                        />
                       </div>
                   </div>
 
@@ -109,15 +114,15 @@ export default function Projects() {
                     </a>
                     <div className="card-body row">
                         <h5 className="col card-title-bruh">Daily Planner</h5>
-                        {/* <Col className='col-btn'>
-                        <Button className='card-btn' variant="primary" onClick={() => setModalShow(true)}>
+                        <Col className='col-btn'>
+                        <Button className='card-btn' variant="primary" onClick={() => setDailyShow(true)}>
                           Learn More
                         </Button>
-                        </Col> */}
-                        {/* <MentorMonkeyModal
-                          show={modalShow}
-                          onHide={() => setModalShow(false)}
-                        /> */}
+                        </Col>
+                        <DailyPlannerModal
+                          show={dailyShow}
+                          onHide={() => setDailyShow(false)}
+                        />
                       </div>
                   </div>
                     </div>
