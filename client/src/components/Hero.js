@@ -11,23 +11,24 @@ export default function Hero() {
     <div className="background-img">
       <Container className='profile-container'>
       <Row>
+        <Col className='name-holder'>
+            <h1 className='steven'>Steven Lofquist</h1>
+              <div className='line'></div>
+              <h5 id="fullstack-dev">Fullstack Developer</h5>
+              <div className='hero-icon-wrapper'>
+                  <a id="resume" target="_" href={Pdf} rel='noopener noreferrer'>Resume</a>
+                  <a className="hero-social" href="https://github.com/StevenLof777" rel="noopener" target='_'><i className='fab fa-github'/></a>
+                  <a className="hero-social" href="https://www.linkedin.com/in/steven-lofquist-49312a19b/" rel="noopener" target='_'><i className='fab fa-linkedin-in'/></a>
 
+                
+                  
+                          {/* <a className="hero-iconsfas fa-envelope" href="lof.steven@gmail.com" rel="noopener"></a> */}
 
-      <Col className='name-holder'>
-          <h1 className='steven'>Steven Lofquist</h1>
-            <div className='line'></div>
-            <h5 id="fullstack-dev">Fullstack Developer</h5>
-            <div className='hero-icon-wrapper'>
-                <a id="resume" target="_" href={Pdf} rel='noopener noreferrer'>Resume</a>
-
-
-                        {/* <a className="hero-iconsfas fa-envelope" href="lof.steven@gmail.com" rel="noopener"></a> */}
-
-              </div>
+                </div>
+        </Col>
+      <Col className='profile-wrapper'>
+        <img src={Profile} className="profile"/> 
       </Col>
-    <Col className='profile-wrapper'>
-    <img src={Profile} className="profile"/> 
-    </Col>
     </Row>
 
     </Container>

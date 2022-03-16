@@ -59,7 +59,15 @@ nav {
     animation: move 10s alternate infinite;
 }
 
+.hero-social{
+    margin-left: 2rem;
+    color: white;
+    font-size: 1.5rem;
+}
 
+.hero-social:hover{
+color: green;
+}
 
 .name-holder{
     text-align: left;
