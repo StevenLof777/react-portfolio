@@ -66,7 +66,7 @@ import {Modal, Row, Col} from 'react-bootstrap'
           </Row>
         </Modal.Body>
         <Modal.Footer>
-        <a href="https://github.com/StevenLof777/dope-horoscope" rel="noopener" className="btn btn-primary">GitHub Repository</a>
+        <a href="https://github.com/StevenLof777/dope-horoscope" rel="noopener" target='_' className="btn btn-primary">GitHub Repository</a>
         </Modal.Footer>
       </Modal>
     );

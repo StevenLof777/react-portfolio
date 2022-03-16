@@ -344,7 +344,7 @@ label {
 
 
 #resume:hover {
-    border: none;
+    border: solid transparent;
     background-color: green;
     transition-duration: 100ms
 }
