@@ -19,7 +19,7 @@ export default function Projects() {
 
   return (
     <div id="project-section">
-        <div className="container">
+        <div className="container project-container">
           <div className="row project-row">
               {/* <!-- PROJECTS --> */}
                 <h3 className="project-header">Projects</h3>

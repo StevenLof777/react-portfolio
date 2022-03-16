@@ -42,6 +42,8 @@ export default function Skills() {
           <div className="col"><i className="devicon-html5-plain bruh-i colored"></i> HTML</div>
           <div className="col"><i className="devicon-css3-plain bruh-i colored"></i> CSS</div>
           <div className="col"><i className="devicon-mysql-plain bruh-i colored"></i> MySQL</div>
+          </div>
+        <div className="row lang-icons">
           <div className="col"><i className="devicon-mongodb-plain bruh-i colored"></i> Mongodb</div>
           <div className="col"><i className="devicon-react-original bruh-i colored"></i> React</div>
           <div className="col"><i className="devicon-javascript-plain bruh-i colored"></i> JavaScript</div>

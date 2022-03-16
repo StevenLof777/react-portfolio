@@ -278,7 +278,7 @@ label {
 }
 
 .card-btn{
-    max-width: 50%;
+    /* max-width: 50%; */
 }
 
 .card-title-bruh {
@@ -367,8 +367,24 @@ label {
 
 
 
-@media only screen and (max-width: 800px) {
-    h1{
+@media only screen and (max-width: 1400px) {
+
+    .box{
+        margin: 1rem;
+    }
+
+    .project-container{
+        max-width: 90%;
+    }
+
+    .card-title-bruh{
+        font-size: medium;
+    }
+
+    .card-btn{
+        font-size: medium;
+    }
+    /* h1{
         font-size: 3em;
     }
 
@@ -397,6 +413,111 @@ label {
         flex-direction: column;
         width: auto;
 
-    }
+    } */
 
 }
+
+@media only screen and (max-width: 768px) {
+   .project-row{
+       /* display:flex; */
+       flex-direction: column;
+       /* background-color: green; */
+       /* margin: 0; */
+
+   }
+   .box{
+       margin: 0;
+       margin-bottom: 3.5rem;
+   }
+   .project-container{
+       max-width: 100%;
+   }
+}
+
+@media only screen and (max-width: 800px) {
+   .steven{
+       font-size: 4rem;
+   }
+    .profile-wrapper  {
+       display: none;
+   }
+   .line{
+       max-width: 100%;
+   }
+   .lang-icons{
+       font-size: medium;
+   }
+}
+
+
+@media only screen and (max-width: 510px) {
+   .steven{
+       font-size: 3rem;
+   }
+   #fullstack-dev{
+    font-size: 1.5rem;
+   }
+
+   .line{
+       max-width: 100%;
+   }
+   
+   .bruh-i {
+    font-size: xx-large;
+}
+}
+
+
+@media only screen and (max-width: 400px) {
+   .steven{
+       font-size: 2rem;
+   }
+   #fullstack-dev{
+    font-size: 1.0rem;
+   }
+
+   .bruh-i {
+       font-size: medium;
+   }
+
+   .lang-icons{
+       /* font-size: small; */
+   }
+
+   .line{
+       max-width: 100%;
+   }
+
+   .hero-social {
+       font-size: 1.2rem;
+   }
+
+   .hero{
+       padding-top: 6rem;
+       padding-bottom: 3rem;
+   }
+
+   #resume{
+    border: solid 2px white;
+    padding: 5px 11px;
+    font-size: 2em;
+    background-color: transparent;
+    width: 6rem;
+    border-radius: 20px;
+    color: white;
+    text-transform: uppercase;
+    font-size: 10px;
+    text-align: center;
+    text-decoration: none; 
+   }
+
+   .about-me-h{
+       font-size: 1rem;
+   }
+   
+   p {
+       text-align: left;
+       font-size: .8rem;
+   }
+}
+
