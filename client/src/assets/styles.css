@@ -434,6 +434,19 @@ label {
    }
 }
 
+@media only screen and (max-width: 1300px) {
+   .contact-form {
+       max-width: 80%;
+   }
+}
+
+@media only screen and (max-width: 600px) {
+   .contact-form {
+       max-width: 100%;
+       padding: 0;
+   }
+}
+
 @media only screen and (max-width: 800px) {
    .steven{
        font-size: 4rem;
