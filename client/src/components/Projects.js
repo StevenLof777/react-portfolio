@@ -18,16 +18,11 @@ export default function Projects() {
   // const [modalShow, setModalShow] = React.useState(false)
 
   return (
-
-    
-
     <div id="project-section">
         <div className="container">
           <div className="row project-row">
               {/* <!-- PROJECTS --> */}
                 <h3 className="project-header">Projects</h3>
-                
-
                 {/* <!-- Mentor Monkey --> */}
                   <div className="col box box-row-1">                      
                     <a href="https://secret-falls-29125.herokuapp.com/" target="_" rel='noopener noreferrer'>
@@ -56,7 +51,7 @@ export default function Projects() {
                     <a href="https://stevenlof777.github.io/dope-horoscope/" target="_" rel='noopener noreferrer'>
 
                       <div className="img-container">
-                      <img src={dopeHoroscope} className="img blur" alt="Dope Horoscope png"/>
+                      <img src={dopeHoroscope} className="img blur" alt="Dope Horoscope "/>
                       <div className="live-demo fade">Live Demo</div>
                       </div>
                     </a>
@@ -81,7 +76,7 @@ export default function Projects() {
 
               {/* Weather Dasboard */}
               <div className="col box">                      
-                    <a href="https://secret-falls-29125.herokuapp.com/" rel='noopener noreferrer'>
+                    <a href="https://stevenlof777.github.io/weather-dashboard/" target="_" rel='noopener noreferrer'>
 
                       <div className="img-container">
                       <img src={weatherDashboard} className="img blur" alt="Mentor Monkey Website"/>
@@ -105,10 +100,10 @@ export default function Projects() {
 
                 {/* <!-- Daily Planner --> */}
                   <div className="col box">                      
-                    <a href="https://secret-falls-29125.herokuapp.com/" rel='noopener noreferrer'>
+                    <a href="https://stevenlof777.github.io/daily-planner/" target="_" rel='noopener noreferrer'>
 
                       <div className="img-container">
-                      <img src={dailyPlanner} className="img blur" alt="Mentor Monkey Website"/>
+                      <img src={dailyPlanner} className="img blur" alt="Daily Planner"/>
                       <div className="live-demo fade">Live Demo</div>
                       </div>
                     </a>

@@ -59,7 +59,7 @@ import {Modal, Row, Col} from 'react-bootstrap'
                   Heroku
                 </li>
                 <li>
-                  Github
+                  GitHub
                 </li>
               </ul>
             </Col>

@@ -1,11 +1,12 @@
 import React from 'react';
 import { useForm, ValidationError } from '@formspree/react';
 
+
 const styles = {
     p: {
         padding: '4rem',
         textAlign: 'center',
-        fontSize: "2rem"
+        fontSize: "1.5rem"
     }
   };
 
@@ -36,7 +37,7 @@ function ContactForm() {
                             errors={state.errors}
                         />
                     <div/>
-                    <label for="Message">Message</label>
+                    <label className='message-label' for="Message">Message</label>
                 <textarea
                     className="form-control"
                     id="message"
@@ -48,15 +49,17 @@ function ContactForm() {
                     field="message"
                     errors={state.errors}
                 />
-                <button type="submit"  className="btn submit-contact btn-primary" disabled={state.submitting}>
-                    Submit
-                </button>
+                <div className='submit-contact '>
+                    <button type="submit"  className="btn btn-primary" disabled={state.submitting}>
+                        Submit
+                    </button>
+                </div>
+
                 </form>
 
                 <div className="social-container">
-                        <a className="social " href="https://github.com/StevenLof777" rel="noopener"><i className='fab fa-github'/></a>
-                        <a className="social " href="https://www.linkedin.com/in/steven-lofquist-49312a19b/" rel="noopener"><i className='fab fa-linkedin-in'/></a>
-                        {/* <a className="social fas fa-envelope" href="lof.steven@gmail.com" rel="noopener"></a> */}
+                        <a className="social " href="https://github.com/StevenLof777" rel="noopener" target='_'><i className='fab fa-github'/></a>
+                        <a className="social " href="https://www.linkedin.com/in/steven-lofquist-49312a19b/" rel="noopener" target='_'><i className='fab fa-linkedin-in'/></a>
                 </div>
         </div>
 

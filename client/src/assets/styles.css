@@ -236,6 +236,10 @@ header {
 
 }
 
+.submit-contact {
+    padding-top: 3rem;
+}
+
 .form-group {
     padding-bottom: 2rem;
 }
@@ -248,6 +252,12 @@ label {
 .contact-form {
     max-width: 50%;
     margin: auto;
+    padding: 2rem;
+}
+
+
+.message-label{
+    padding-top: 1.5rem;
 }
 
 /* Projects */
@@ -284,7 +294,7 @@ label {
     position: absolute;
     inset: 0;
     color: white;
-    font-size: 5rem;
+    font-size: 3rem;
     padding: 1rem;
     background: rgba(0, 0, 0, 0.432);
     display: flex;

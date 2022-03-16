@@ -16,7 +16,7 @@ import {Modal, Row, Col} from 'react-bootstrap'
         </Modal.Header>
         <Modal.Body>
           <p>
-            A chat app where users can sign up to either be a mentor or a mentee. Users can make profiles and describe what skills they have and discuss code in a chat room.
+          An website that allows an user to input their birth day and recieve their horoscope and see which celebrity they're compatible with.
           </p>
           <Row>
             <Col>
@@ -31,19 +31,10 @@ import {Modal, Row, Col} from 'react-bootstrap'
                   Javascript
                 </li>
                 <li>
-                  Handlebars
-                </li>
-                <li>
                   Bootstrap
                 </li>
                 <li>
-                  Express API
-                </li>
-                <li>
-                  Socket.io
-                </li>
-                <li>
-                  MySQL
+                  Aztro API
                 </li>
               </ul>
             </Col>
@@ -56,17 +47,14 @@ import {Modal, Row, Col} from 'react-bootstrap'
                   git
                 </li>
                 <li>
-                  Heroku
-                </li>
-                <li>
-                  Github
+                  GitHub
                 </li>
               </ul>
             </Col>
           </Row>
         </Modal.Body>
         <Modal.Footer>
-        <a href="https://github.com/StevenLof777/dope-horoscope" rel="noopener" className="btn btn-primary">GitHub Repository</a>
+        <a href="https://github.com/StevenLof777/dope-horoscope" rel="noopener" target="_" className="btn btn-primary">GitHub Repository</a>
         </Modal.Footer>
       </Modal>
     );
