@@ -47,9 +47,6 @@ import {Modal, Row, Col} from 'react-bootstrap'
                   git
                 </li>
                 <li>
-                  Heroku
-                </li>
-                <li>
                   GitHub
                 </li>
               </ul>
