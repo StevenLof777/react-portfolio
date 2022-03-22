@@ -16,7 +16,7 @@ import {Modal, Row, Col} from 'react-bootstrap'
         </Modal.Header>
         <Modal.Body>
           <p>
-            A chat app where users can sign up to either be a mentor or a mentee. Users can make profiles and describe what skills they have and discuss code in a chat room.
+          A weather dashboard that user that takes an users input and outputs the current weather details along with a 5-day forecast.
           </p>
           <Row>
             <Col>
@@ -31,19 +31,10 @@ import {Modal, Row, Col} from 'react-bootstrap'
                   Javascript
                 </li>
                 <li>
-                  Handlebars
-                </li>
-                <li>
                   Bootstrap
                 </li>
                 <li>
-                  Express API
-                </li>
-                <li>
-                  Socket.io
-                </li>
-                <li>
-                  MySQL
+                  OpenWeather API
                 </li>
               </ul>
             </Col>
