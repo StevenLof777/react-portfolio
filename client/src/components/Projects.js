@@ -4,10 +4,10 @@ import { DopeHoroscopeModal } from './modals/DopeHoroscope';
 import { DailyPlannerModal } from './modals/DailyPlanner';
 import { WeatherDashBoardModal } from './modals/WeatherDashboard';
 import{ Button, Col }from 'react-bootstrap'
-import MentorMonkey from '../assets/MentorMonkey.png';
-import dopeHoroscope from '../assets/dope_horoscope.png';
-import weatherDashboard from '../assets/weather-dashboard.png';
-import dailyPlanner from '../assets/daily-planner.png';
+import MentorMonkey from '../assets/mentor-monkey.gif';
+import dopeHoroscope from '../assets/dope-horoscope.gif';
+import weatherDashboard from '../assets/weather-dashboard.gif';
+import dailyPlanner from '../assets/scheduler.gif';
 
  
 export default function Projects() {
