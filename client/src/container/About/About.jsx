@@ -1,29 +1,25 @@
-import React from 'react'
+import {React, useState, useEffect} from 'react'
 import { motion } from "framer-motion";
 import { images } from "../../constants"
 
 import "./About.scss";
-
-const abouts = [
-  {
-    title: "Front End",
-    description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. In, odit?",
-    imageUrl: images.about01
-  },
-  {
-    title: "Back End",
-    description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. In, odit?",
-    imageUrl: images.about02
-  },
-  {
-    title: "Full Stack",
-    description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. In, odit?",
-    imageUrl: images.about03
-  },
-]
+import { urlFor, client } from '';
 
 const About = () => {
+  const [abouts, setAbouts] = useState([]);
+
+  useEffect(() => {
+    const query = '*[_type == "abouts"]';
+
+    client.fetch(query).then((data) => {
+      setAbouts(data);
+    });
+  }, []);
+
   return (
+    
+    // <>bruh</>
+
     <>
       <h2 className="head-text">
           I Know that
@@ -33,7 +29,7 @@ const About = () => {
           <span>Good Business</span>
       </h2>
 
-      <div className='app__profile'>
+      <div className='app__profiles'>
         {
           abouts.map((about, index) => (
             <motion.div
