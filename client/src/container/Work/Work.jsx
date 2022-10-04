@@ -7,7 +7,7 @@ import { urlFor, client} from '../../client'
 
 import "./Work.scss"
 
-import mobile from '../../assets/mobile.png'
+import placeholder from '../../assets/placeholder.jpg'
 
 const Work = () => {
   const [works, setWorks] = useState([]);
@@ -50,40 +50,92 @@ const Work = () => {
       <motion.div
         animate={animateCard}
         tranistion={{duration: 0.5, dleayChildren: 0.5}}
+        className="app__work-portfolio"
       >
         {/* Uncomment once sanity errors are resolved */}
         {/* {filterWork.map((work, index) => (
         ))} */}
-          <div classNmae="app___work-item app__flex">
-            <div className = "app__work-img flex">
-            <img src={mobile} alt="place holder img"/>
-              {/* <img src={urlFor(work.imgUrl)} alt ={work.name}/> */}
+          <div className="app__work-item app__flex">
+            <div className="app__work-img app__flex">
+              <img src={placeholder} alt="place holder img"/>
+                {/* <img src={urlFor(work.imgUrl)} alt ={work.name}/> */}
 
-            <motion.div
-              whileHover={{opacity: [0,1]}}
-              transition={{duration: .25, ease: 'easeInOut', staggerChildren: 0.5}} 
-              className="app__work-hover app__flex"
-            ></motion.div>
-              {/* <a href={work.pojectLink} target="_blank" rel='noreferror'/> */}
-              <a href='https://github.com/StevenLof777?tab=repositories' target="blank">
-                <motion.div
-                  whileInView={{scale:[0,1]}} 
-                  whileHover={{scale: [1, 0.9]}}
-                  transition={{duration: 0.25}} 
-                  className="app__work-hover app__flex"
-                >
-                  <AiFillGithub/>
-                </motion.div>
-              </a>
+              <motion.div
+                whileHover={{ opacity: [0, 1] }}
+                transition={{ duration: 0.25, ease: 'easeInOut', staggerChildren: 0.5 }}
+                className="app__work-hover app__flex"
+              >
+                {/* <a href={work.pojectLink} target="_blank" rel='noreferrer'/> */}
+                <a href='https://github.com/StevenLof777?tab=repositories' target="blank" rel="noreferrer">
+                  <motion.div
+                    whileInView={{scale:[0,1]}} 
+                    whileHover={{scale: [1, 0.9]}}
+                    transition={{duration: 0.25}} 
+                    className="app__flex"
+                  >
+                    <AiFillGithub/>
+                  </motion.div>
+                </a>
+              </motion.div>
             </div>
 
-            <div className='app__workwork content app__flex'>
+            <div className='app__work-content app__flex'>
               {/* <h4 className='bold-text'>{work.title}</h4> */}
-              <h4>Culpa eiusmod</h4>
+              <h4 className='bold-text'>Culpa eiusmod</h4>
               {/* <p className='p-text style={{marginTop: 10}}'>{work.description}</p> */}
               <p className='p-text' style={{marginTop: 10}}>Laborum proident sit elit do nisi aute enim enim deserunt ex dolore.</p>
-            
-              <div className="app__work-tag app__felx"></div>
+
+
+              <div className="app__work-tag app__flex">
+                  <p className="p-text">UI/UX</p>
+              </div>
+            </div>
+
+          </div>
+      </motion.div>
+
+      <motion.div
+        animate={animateCard}
+        tranistion={{duration: 0.5, dleayChildren: 0.5}}
+        className="app__work-portfolio"
+      >
+        {/* Uncomment once sanity errors are resolved */}
+        {/* {filterWork.map((work, index) => (
+        ))} */}
+          <div className="app__work-item app__flex">
+            <div className="app__work-img app__flex">
+              <img src={placeholder} alt="place holder img"/>
+                {/* <img src={urlFor(work.imgUrl)} alt ={work.name}/> */}
+
+              <motion.div
+                whileHover={{ opacity: [0, 1] }}
+                transition={{ duration: 0.25, ease: 'easeInOut', staggerChildren: 0.5 }}
+                className="app__work-hover app__flex"
+              >
+                {/* <a href={work.pojectLink} target="_blank" rel='noreferrer'/> */}
+                <a href='https://github.com/StevenLof777?tab=repositories' target="blank" rel="noreferrer">
+                  <motion.div
+                    whileInView={{scale:[0,1]}} 
+                    whileHover={{scale: [1, 0.9]}}
+                    transition={{duration: 0.25}} 
+                    className="app__flex"
+                  >
+                    <AiFillGithub/>
+                  </motion.div>
+                </a>
+              </motion.div>
+            </div>
+
+            <div className='app__work-content app__flex'>
+              {/* <h4 className='bold-text'>{work.title}</h4> */}
+              <h4 className='bold-text'>Culpa eiusmod</h4>
+              {/* <p className='p-text style={{marginTop: 10}}'>{work.description}</p> */}
+              <p className='p-text' style={{marginTop: 10}}>Laborum proident sit elit do nisi aute enim enim deserunt ex dolore.</p>
+
+
+              <div className="app__work-tag app__flex">
+                  <p className="p-text">Full Stack</p>
+              </div>
             </div>
 
           </div>
