@@ -5,42 +5,11 @@ import {AppWrap} from '../../wrapper';
 // import { urlFor, client} from '../../client'
 import "./Skills.scss";
 
-import reactIcon from "../../assets/react.png"
-import sass from "../../assets/sass.png"
-import node from "../../assets/node.png"
-import javascript from "../../assets/javascript.png"
-import graphql from "../../assets/graphql.png"
-import git from "../../assets/git.png"
+import { skills, experiences } from '../../data.js';
 
-const skill = [
-  {
-    name: "React",
-    imageUrl: reactIcon
-  },
-  {
-    name: "JavaScript",
-    imageUrl: javascript
-  },
-  {
-    name: "Node.js",
-    imageUrl: node
-  },
-  {
-    name: "GraphQL",
-    imageUrl: graphql
-  },
-  {
-    name: "Git",
-    imageUrl: git
-  },
-  {
-    name: "Sass",
-    imageUrl: sass
-  }
-]
+import reactIcon from "../../assets/react.png"
 
 const Skills = () => {
-
   // const [skill, setSkill] = useState([])
   // const [expExperience, setExperience] = useState([])
 
@@ -54,26 +23,52 @@ const Skills = () => {
   //     setSkill(data);
   //   });
   // }, []);
-
   return (
     <>
       <h2 className="head-text">My Skills</h2>
       
       <div className='app__skills-container'>
         <motion.div className="app__skills-list">
-            {skill.map((skill) => (
+            {skills.map((skills) => (
               <motion.div
                 whileInView={{ opacity: [0, 1] }}
                 transition={{ duration: 0.5 }}
                 className="app__skills-item app__flex"
-                key={skill.name}
+                key={skills.name}
               >
                 <div
                   className="app__flex">
-                  <img src={skill.imageUrl} alt={skill.name} />
+                  <img src={skills.imageUrl} alt={skills.name} />
                 </div>
-                <p className="p-text">{skill.name}</p>
+                <p className="p-text">{skills.name}</p>
               </motion.div>
+            ))}
+          </motion.div>
+
+        <motion.div className="app__skills-exp">
+            {experiences.map((work) => (
+              <>
+                <motion.div
+                  whileInView={{ opacity: [0, 1] }}
+                  transition={{ duration: 0.5 }}
+                  className="app__skills-item app__flex"
+                  data-tip
+                  data-for={work.name}
+                  key={work.name}
+                >
+                  <h4 className='bold-text'>{work.name}</h4>
+                  <p className='p-text'>{work.company}</p>
+                </motion.div>
+
+                <ReactToolTip
+                  id={work.name}
+                  effect="solid"
+                  arrowColor="#fff"
+                  className="skills-tooltip"
+                >
+                  {work.desc}
+                </ReactToolTip>
+              </>
             ))}
           </motion.div>
         </div>
