@@ -42,13 +42,16 @@ const Footer = () => {
       <h2 className='head-text'>
         Contact
       </h2>
-      <div className='app__footer-card'>
-        <img src={images.email} alt="Email"/>
-        <a href="mail:stevenlofquist7@gmail.com" className="p-text">stevenlofquist7@gmail</a>
-      </div>
-      <div className='app__footer-card'>
-        <img src={images.mobile} alt="Email"/>
-        <a href="tel: +1 (731) 336-6912" className="p-text">+1 (731) 336-6912</a>
+
+      <div className='app__footer-cards'>
+        <div className='app__footer-card'>
+          <img src={images.email} alt="Email"/>
+          <a href="mail:stevenlofquist7@gmail.com" className="p-text">stevenlofquist7@gmail</a>
+        </div>
+        <div className='app__footer-card'>
+          <img src={images.mobile} alt="Email"/>
+          <a href="tel: +1 (731) 336-6912" className="p-text">+1 (731) 336-6912</a>
+        </div>
       </div>
 
       {!isFormSubmitted ? 
@@ -64,13 +67,13 @@ const Footer = () => {
               className='p-text'
               placeholder='Your Message'
               value={message} onChange={handleChangeInput}
-              name=""
+              name="message"
             >
 
             </textarea>
 
-            <button type="button" className='p-text' onClick={handleSubmit}>{loading? "Sending" : "Send Message"}</button>
           </div>
+            <button type="button" className='p-text' onClick={handleSubmit}>{loading? "Sending" : "Send Message"}</button>
         </div>
       : 
         <div>
