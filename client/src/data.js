@@ -4,6 +4,9 @@ import node from "./assets/node.png"
 import javascript from "./assets/javascript.png"
 import graphql from "./assets/graphql.png"
 import git from "./assets/git.png"
+import about01 from './assets/about01.png'
+import about02 from './assets/about02.png'
+import about03 from './assets/about03.png'
 
 export const skills = [
     {
@@ -43,4 +46,22 @@ export const experiences = [
       company: " ",
       desc:"Build upon developer skills"
     },
+]
+
+export const abouts = [
+  {
+    title: "Front End",
+    description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. In, odit?",
+    imageUrl: about01
+  },
+  {
+    title: "Back End",
+    description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. In, odit?",
+    imageUrl: about02
+  },
+  {
+    title: "Full Stack",
+    description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. In, odit?",
+    imageUrl: about03
+  },
 ]
