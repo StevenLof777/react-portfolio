@@ -51,6 +51,14 @@
     }
   }
   
+  .name-text{
+    font-size: 2.75rem;
+    font-weight: 800;
+    text-align: center;
+    color: white;
+    text-transform: capitalize;
+  }
+
   .head-text {
     font-size: 2.75rem;
     font-weight: 800;
@@ -157,10 +165,10 @@
     padding: 1rem;
   
     .app__navigation-dot {
-      width: 10px;
-      height: 10px;
+      width: 15px;
+      height: 15px;
       border-radius: 50%;
-      background-color: #cbcbcb;
+      background-color: #8f8f8f;
       margin: 0.5rem;
   
       transition: background-color 0.2s ease-in-out;

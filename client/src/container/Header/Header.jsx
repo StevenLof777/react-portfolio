@@ -2,7 +2,6 @@ import React from 'react'
 import {motion} from "framer-motion"
 import { AppWrap } from '../../wrapper'
 import "./Header.scss"
-import { images } from '../../constants'
 
 
 const scaleVariants = {
@@ -20,23 +19,25 @@ const Header = () => {
   return (
     <div className='app__header app__flex'>
       <motion.div
-        whileInView={{x: [-100, 0], opacity: [0,1]}}
-        transition={{duration: 0.5}}
+        whileInView={{y: [0, 100], opacity: [0,1]}}
+        transition={{duration: 1.0}}
         className="app__header-infor"
       >
+        {/* <iframe src="https://giphy.com/embed/3oKIPnAiaMCws8nOsE" width="457" height="480" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/cat-kitten-computer-3oKIPnAiaMCws8nOsE">via GIPHY</a></p> */}
         <div className="app__header-badge">
           <div className='badge-cmp app__flex'>
-            <span>👋</span>
-            <div style={{marginLeft: 20}}>
-              <p className='p-text'>Hello, I am</p>
-              <h1 className="head-text">Steven</h1>
+
+            <div>
+              <h1 className="header-text">Steven Lofquist</h1>
             </div>
           </div>
         </div>
 
-        <div className='tag-cmp ap-__flex'>
-          <p className='p-text'>Full Stack Developer</p>
+        <div className='tag-cmp app__flex'>
+          <p className='header-p-text'>Full Stack Developer</p>
+          
         </div>
+          <p className='header-p-text'><br />Resume</p>
 
       </motion.div>
       
@@ -45,33 +46,18 @@ const Header = () => {
         transition={{duration: 0.5, delayChildren: 0.5}}
         className="app__header-img"
       >
-        <img src={images.profile} alt="profile" />
 
-        <motion.img
-          whileInView={{scale: [0,1]}}
-          transition={{duration: 0.5, ease: "easeInOut"}}
-          src={images.circle}
-          alt="profile_circle"
-          className="overlay_circle"
-        >
-        </motion.img>
 
         <motion.div
       variants={scaleVariants}
       whileInView={scaleVariants.whileInView}
       className="app__header-circles"
     >
-      {[images.flutter, images.redux, images.sass].map((circle, index) => (
-        <div className="circle-cmp app__flex" key={`circle-${index}`}>
-          <img src={circle} alt="profile_bg" />
-        </div>
-      ))}
     </motion.div>
 
       </motion.div>
 
-      <motion.div></motion.div>
-      <motion.div></motion.div>
+
 
     </div>
   )

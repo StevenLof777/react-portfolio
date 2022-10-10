@@ -8,11 +8,6 @@ const AppWrap = (Component, idName, classNames) => function HOC() {
 
         <div className="app__wrapper app__flex">
             <Component/>
-
-            {/* <div className="copyright">
-                <p className ="p-text">@2022 Do voluptate est amet consequat do occaecat aute occaecat aliqua minim.</p>
-                <p className ="p-text">Do voluptate est amet consequat do occaecat aute occaecat aliqua minim.</p>
-            </div> */}
         </div>
         
         <NavigationDots active={idName}/>

@@ -27,7 +27,7 @@ margin: 4em 2rem 2rem;
     padding: 1rem;
     border-radius: 10px;
     cursor: pointer;
-    background-color: #fef4f5;
+    background-color: var(--white-color);
 
     transition: all 0.3s ease-in-out;
 
@@ -60,13 +60,7 @@ margin: 4em 2rem 2rem;
 }
 }
 
-.app__footer-cards .app__footer-card:last-child {
-    background-color: #f2f7fb;
-}
 
-.app__footer-cards .app__footer-card:last-child:hover {
-    box-shadow: 0 0 25px #f2f7fb;
-}
 
 .app__footer-form {
 width: 60%;
@@ -89,7 +83,7 @@ div {
     padding: 0.95rem;
     border: none;
     border-radius: 7px;
-    background-color: var(--primary-color);
+    background-color: var(--white-color);
 
     font-family: var(--font-base);
     color: var(--secondary-color);
@@ -101,7 +95,7 @@ div {
     }
 
     &:hover {
-    box-shadow: 0 0 25px var(--primary-color);
+    box-shadow: 0 0 25px var(--white-color);
     }
 }
 
@@ -121,7 +115,7 @@ button {
     cursor: pointer;
 
     &:hover {
-    background-color: #2430af;
+    background-color: var(--primary-color);
     }
 }
 

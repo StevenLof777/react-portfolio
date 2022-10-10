@@ -7,6 +7,7 @@ import git from "./assets/git.png"
 import about01 from './assets/about01.png'
 import about02 from './assets/about02.png'
 import about03 from './assets/about03.png'
+import placeholder from './assets/placeholder.jpg'
 
 export const skills = [
     {
@@ -63,5 +64,29 @@ export const abouts = [
     title: "Full Stack",
     description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. In, odit?",
     imageUrl: about03
+  },
+]
+
+export const projects = [
+  {
+    title: "Voluptate",
+    description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. In, odit?",
+    tag: "Front-End",
+    imageUrl: placeholder,
+    gitHub: "https://github.com/StevenLof777?tab=repositories"
+  },
+  {
+    title: "Voluptate",
+    description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. In, odit?",
+    tag: "Front-End",
+    imageUrl: placeholder,
+    gitHub: "https://github.com/StevenLof777?tab=repositories"
+  },
+  {
+    title: "Voluptate",
+    description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. In, odit?",
+    tag: "Front-End",
+    imageUrl: placeholder,
+    gitHub: "https://github.com/StevenLof777?tab=repositories"
   },
 ]
