@@ -11,9 +11,7 @@ const About = () => {
   return (
     <>
       <h2 className="head-text">
-          About
-          <span> Me</span>
-
+          About Me
       </h2>
 
       <motion.div 
