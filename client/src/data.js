@@ -1,70 +1,76 @@
 import reactIcon from "./assets/react.png"
-import sass from "./assets/sass.png"
+import springBoot from "./assets/spring-boot.png"
 import node from "./assets/node.png"
 import javascript from "./assets/javascript.png"
-import graphql from "./assets/graphql.png"
+import mongodb from './assets/mongodb.png'
+import mysql from './assets/mysql.png'
+import angular from "./assets/angular.png"
 import git from "./assets/git.png"
-import about01 from './assets/about01.png'
-import about02 from './assets/about02.png'
-import about03 from './assets/about03.png'
+import css from "./assets/css.png"
+import java from './assets/java.png'
 import placeholder from './assets/placeholder.jpg'
+
 
 export const skills = [
     {
-      name: "React",
-      imageUrl: reactIcon
-    },
-    {
       name: "JavaScript",
       imageUrl: javascript
+    },
+    {
+      name: "CSS",
+      imageUrl: css
     },
     {
       name: "Node.js",
       imageUrl: node
     },
     {
-      name: "GraphQL",
-      imageUrl: graphql
+      name: "Java",
+      imageUrl: java
+    },
+    {
+      name: "React",
+      imageUrl: reactIcon
+    },
+    {
+      name: "Angular",
+      imageUrl: angular
+    },
+    {
+      name: "Spring Boot",
+      imageUrl: springBoot
+    },
+    {
+      name: "MongoDB",
+      imageUrl: mongodb
+    },
+    {
+      name: "MySQL",
+      imageUrl: mysql
     },
     {
       name: "Git",
       imageUrl: git
     },
-    {
-      name: "Sass",
-      imageUrl: sass
-    }
+
 ]
   
 export const experiences = [
     {
-      name: "Student",
+      name: "Student (December 2021 - March 2022)",
       company: "Georgia Institute of Technology",
-      desc:"Learn MERN stack technologies"
+      desc:"Learned full Stack development using MERN stack technologies. "
     },
     {
-      name: "Freelance Software Developer",
-      company: " ",
-      desc:"Build upon developer skills"
+      name: "CNC Machinist (June 2020 - June 2021)",
+      company: "Paris Industrial Incorporated",
+      desc:"Optimized and maintained programs for multiple CNC machines to ensure quality operations wereexecuted while simultaneously maximizing work flow."
     },
-]
-
-export const abouts = [
-  {
-    title: "Front End",
-    description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. In, odit?",
-    imageUrl: about01
-  },
-  {
-    title: "Back End",
-    description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. In, odit?",
-    imageUrl: about02
-  },
-  {
-    title: "Full Stack",
-    description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. In, odit?",
-    imageUrl: about03
-  },
+    {
+      name: "CNC Machinist (June 2019 - June 2020)",
+      company: "Paris Industrial Incorporated",
+      desc:"Write conversational programs for CNC machines that are well optimized to perform tasks quickly and efficiently."
+    },
 ]
 
 export const projects = [

@@ -12,6 +12,16 @@
     margin-top: 2rem;
   }
   
+  .app__about-me {
+    padding-top: 1rem;
+    width: 50%;
+    font-size: larger;
+
+    @media screen and (max-width: 720px) {
+      width: 100%;
+    }
+  }
+
   .app__profile-item {
     width: 190px;
     display: flex;

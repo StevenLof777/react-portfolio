@@ -10,7 +10,7 @@ const Header = () => {
     <div className='app__header app__flex'>
       <motion.div
         whileInView={{x: [0, 0], opacity: [0,1]}}
-        transition={{duration: 1.0}}
+        transition={{duration: 0.5}}
         className="app__header-img"
         >
           <img src={cat} alt="cat" className='cat'/>
@@ -18,7 +18,7 @@ const Header = () => {
 
       <motion.div
         whileInView={{y: [0, 0], opacity: [0,1]}}
-        transition={{duration: 1.0}}
+        transition={{duration: 0.5}}
         className="app__header-info"
       >
         <div className="app__header-badge">
@@ -30,7 +30,7 @@ const Header = () => {
 
       <motion.div
         whileInView={{y: [0, 0], opacity: [0,1]}}
-        transition={{duration: 2.0}}
+        transition={{duration: 0.5}}
         >
         <div className='tag-cmp '>
           <p className='header-p-text'>Full Stack Developer</p>
@@ -39,7 +39,7 @@ const Header = () => {
 
       <motion.div
         whileInView={{y: [0, 0], opacity: [0,1]}}
-        transition={{duration: 3.0}}
+        transition={{duration: 0.5}}
         className=""
         >
         <p className='header-p-text'><br />

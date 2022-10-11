@@ -46,7 +46,7 @@ const Work = () => {
   return (
     <>
       <h2 className="head-text">
-        My <span>Projects</span>
+        Projects
       </h2>
 
       {/* <div className='app__work-filter'>
@@ -63,8 +63,9 @@ const Work = () => {
 
         <motion.div
           animate={animateCard}
-          tranistion={{duration: 0.5, dleayChildren: 0.5}}
+          tranistion={{duration: 0.5, delayChildren: 0.5}}
           className="app__work-portfolio"
+          whileInView={{x: [0, 0], opacity: [0,1]}}
           >
           {projects.map((project)=>(
 
