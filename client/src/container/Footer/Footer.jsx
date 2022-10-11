@@ -1,7 +1,7 @@
 import React from 'react'
 import "./Footer.scss"
 
-import { images } from '../../constants'
+import { images } from '../../constants/images'
 import { AppWrap, MotionWrap } from "../../wrapper"
 import { useForm, ValidationError } from '@formspree/react';
 

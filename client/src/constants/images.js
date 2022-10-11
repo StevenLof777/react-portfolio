@@ -9,7 +9,7 @@ import git from '../assets/git.png';
 import graphql from '../assets/graphql.png';
 import html from '../assets/html.png';
 import javascript from '../assets/javascript.png';
-import mu5 from '../assets/mu5.png';
+import placeholder from '../assets/placeholder.jpg';
 import node from '../assets/node.png';
 import python from '../assets/python.png';
 import react from '../assets/react.png';
@@ -35,7 +35,7 @@ import nb from '../assets/nb.png';
 import skype from '../assets/skype.png';
 import spotify from '../assets/spotify.png';
 
-export default {
+export const images = {
   email,
   mobile,
   api,
@@ -47,7 +47,7 @@ export default {
   graphql,
   html,
   javascript,
-  mu5,
+  placeholder,
   node,
   python,
   react,

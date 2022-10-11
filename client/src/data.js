@@ -1,56 +1,45 @@
-import reactIcon from "./assets/react.png"
-import springBoot from "./assets/spring-boot.png"
-import node from "./assets/node.png"
-import javascript from "./assets/javascript.png"
-import mongodb from './assets/mongodb.png'
-import mysql from './assets/mysql.png'
-import angular from "./assets/angular.png"
-import git from "./assets/git.png"
-import css from "./assets/css.png"
-import java from './assets/java.png'
-import placeholder from './assets/placeholder.jpg'
-
+import {images} from './constants/images'
 
 export const skills = [
     {
       name: "JavaScript",
-      imageUrl: javascript
+      imageUrl: images.javascript
     },
     {
       name: "CSS",
-      imageUrl: css
+      imageUrl: images.css
     },
     {
       name: "Node.js",
-      imageUrl: node
+      imageUrl: images.node
     },
     {
       name: "Java",
-      imageUrl: java
+      imageUrl: images.java
     },
     {
       name: "React",
-      imageUrl: reactIcon
+      imageUrl: images.react
     },
     {
       name: "Angular",
-      imageUrl: angular
+      imageUrl: images.angular
     },
     {
       name: "Spring Boot",
-      imageUrl: springBoot
+      imageUrl: images.springBoot
     },
     {
       name: "MongoDB",
-      imageUrl: mongodb
+      imageUrl: images.mongodb
     },
     {
       name: "MySQL",
-      imageUrl: mysql
+      imageUrl: images.mysql
     },
     {
       name: "Git",
-      imageUrl: git
+      imageUrl: images.git
     },
 
 ]
@@ -78,21 +67,21 @@ export const projects = [
     title: "Voluptate",
     description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. In, odit?",
     tag: "Front-End",
-    imageUrl: placeholder,
+    imageUrl: images.placeholder,
     gitHub: "https://github.com/StevenLof777?tab=repositories"
   },
   {
     title: "Voluptate",
     description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. In, odit?",
     tag: "Front-End",
-    imageUrl: placeholder,
+    imageUrl: images.placeholder,
     gitHub: "https://github.com/StevenLof777?tab=repositories"
   },
   {
     title: "Voluptate",
     description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. In, odit?",
     tag: "Front-End",
-    imageUrl: placeholder,
+    imageUrl: images.placeholder,
     gitHub: "https://github.com/StevenLof777?tab=repositories"
   },
 ]
