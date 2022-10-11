@@ -55,12 +55,15 @@ margin: 4em 2rem 2rem;
     }
 }
 
-@media screen and (max-width: 768px) {
-    width: 100%;
-}
+    @media screen and (max-width: 768px) {
+        width: 100%;
+    }
 }
 
-
+.contact-succeed{
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
 
 .app__footer-form {
 width: 60%;
@@ -73,7 +76,6 @@ div {
     margin: 0.75rem 0;
     border-radius: 10px;
     cursor: pointer;
-    background-color: var(--primary-color);
 
     transition: all 0.3s ease-in-out;
 

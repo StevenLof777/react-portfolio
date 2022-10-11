@@ -1,45 +1,17 @@
-import React, { useState } from 'react'
+import React from 'react'
 import "./Footer.scss"
 
 import { images } from '../../constants'
 import { AppWrap, MotionWrap } from "../../wrapper"
-import { client } from "../../client"
+import { useForm, ValidationError } from '@formspree/react';
 
 import './Footer.scss'
 
 const Footer = () => {
-  const [formData, setFormData] = useState({name: '', email: '', messag: ''})
-  const [isFormSubmitted, setIsFormSubmitted] = useState(false)
-  const [loading, setLoading] = useState(false)
-
-  const { name, email, message } = formData;
-
-  const handleChangeInput = e => {
-    const { name, value } = e.target;
-
-    setFormData({...formData, [name]:value})
-  }
-
-  const handleSubmit = () => {
-    setLoading(true);
-
-    const contact = {
-      _type: 'contact',
-      name: name,
-      email: email,
-      message: message
-    }
-
-    client.create(contact)
-    .then(() => {
-      setLoading(false);
-      setIsFormSubmitted(true)
-    })
-  }
-  
+  const [state, handleSubmit] = useForm("xrgjkzew");
   return (
     <>
-      <h2 className='head-text'>
+      <h2 className='head-text '>
         Contact
       </h2>
 
@@ -54,32 +26,45 @@ const Footer = () => {
         </div>
       </div>
 
-      {!isFormSubmitted ? 
-        <div className='app__footer-form app__flex'>
-          <div className='app__flex'>
-            <input className='p-text' type="text" placeholder='Your Name' name='name' value={name} onChange={handleChangeInput}></input>
-          </div>
-          <div className='app__flex'>
-            <input className='p-text' type="text" placeholder='Your Email' name='email' value={email} onChange={handleChangeInput}></input>
-          </div>
-          <div>
-            <textarea
-              className='p-text'
-              placeholder='Your Message'
-              value={message} onChange={handleChangeInput}
-              name="message"
-            >
-
-            </textarea>
-
-          </div>
-            <button type="button" className='p-text' onClick={handleSubmit}>{loading? "Sending" : "Send Message"}</button>
-        </div>
-      : 
-        <div>
-          <h3 className='head-text'>Submitted </h3>
-        </div>
-      }  
+    {state.succeeded ?
+    <h2 className='head-text contact-succeed'>Thanks for getting in touch!</h2>
+    :  
+    <form onSubmit={handleSubmit} className='app__footer-form app__flex'>
+      <div className='app__flex'>
+      <input
+        id="email"
+        type="email" 
+        name="email"
+        placeholder='Email'
+        className='p-text'
+      />
+      <ValidationError 
+        prefix="Email" 
+        field="email"
+        errors={state.errors}
+      />
+      </div>
+      <div>
+        <textarea
+          className='p-text'
+          id="message"
+          name="message"
+          placeholder='Message'
+        />
+        <ValidationError 
+          prefix="Message" 
+          field="message"
+          errors={state.errors}
+        />
+      </div>
+      <button type="submit" disabled={state.submitting}>
+        {state.submitting ?
+        "Submitting"
+        :
+        "Submit"}
+      </button>
+    </form>
+  }
     </>
   )
 }
