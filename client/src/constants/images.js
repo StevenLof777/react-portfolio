@@ -1,10 +1,10 @@
 import email from '../assets/email.png';
 import mobile from '../assets/mobile.png';
-import api from '../assets/api.png';
-import cpp from '../assets/cpp.png';
+import angular from '../assets/angular.png';
+import java from '../assets/java.png';
 import css from '../assets/css.png';
-import figma from '../assets/figma.png';
-import flutter from '../assets/flutter.png';
+import mysql from '../assets/mysql.png';
+import mongodb from '../assets/mongodb.png';
 import git from '../assets/git.png';
 import graphql from '../assets/graphql.png';
 import html from '../assets/html.png';
@@ -13,7 +13,7 @@ import placeholder from '../assets/placeholder.jpg';
 import node from '../assets/node.png';
 import python from '../assets/python.png';
 import react from '../assets/react.png';
-import redux from '../assets/redux.png';
+import springBoot from '../assets/spring-boot.png';
 import sass from '../assets/sass.png';
 import typescript from '../assets/typescript.png';
 import vue from '../assets/vue.png';
@@ -38,11 +38,11 @@ import spotify from '../assets/spotify.png';
 export const images = {
   email,
   mobile,
-  api,
-  cpp,
+  angular,
+  java,
   css,
-  figma,
-  flutter,
+  mysql,
+  mongodb,
   git,
   graphql,
   html,
@@ -51,7 +51,7 @@ export const images = {
   node,
   python,
   react,
-  redux,
+  springBoot,
   sass,
   typescript,
   vue,
