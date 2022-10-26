@@ -1,9 +1,9 @@
 import React from 'react'
 import {motion} from "framer-motion"
-import { AppWrap } from '../../wrapper'
+import { AppWrap } from '../../../../wrapper'
 import "./Header.scss"
-import cat from "../../assets/cat-coding.gif"
-import pdf from "../../assets/FullStack_Resume_Current.pdf"
+
+import { images, pdfs } from '../../../../assets'
 
 const Header = () => {
   return (
@@ -13,7 +13,7 @@ const Header = () => {
         transition={{duration: 0.5}}
         className="app__header-img"
         >
-          <img src={cat} alt="cat" className='cat'/>
+          <img src={images.cat} alt="cat" className='cat'/>
       </motion.div>
 
       <motion.div
@@ -43,7 +43,7 @@ const Header = () => {
         className=""
         >
         <p className='header-p-text'><br />
-            <a href={pdf} className='resume' target="_blank" rel="noreferrer">Resume</a>
+            <a href={pdfs.resume} className='resume' target="_blank" rel="noreferrer">Resume</a>
         </p>
       </motion.div>
 

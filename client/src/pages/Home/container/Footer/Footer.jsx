@@ -1,8 +1,8 @@
 import React from 'react'
 import "./Footer.scss"
 
-import { images } from '../../constants/images'
-import { AppWrap, MotionWrap } from "../../wrapper"
+import { images } from '../../../../assets'
+import { AppWrap, MotionWrap } from "../../../../wrapper"
 import { useForm, ValidationError } from '@formspree/react';
 
 import './Footer.scss'
@@ -21,7 +21,7 @@ const Footer = () => {
           <a href="mail:stevenlofquist7@gmail.com" className="p-text">stevenlofquist7@gmail</a>
         </div>
         <div className='app__footer-card'>
-          <img src={images.mobile} alt="Email"/>
+          <img src={images.mobile} alt="Mobile"/>
           <a href="tel: +1 (731) 336-6912" className="p-text">+1 (731) 336-6912</a>
         </div>
       </div>

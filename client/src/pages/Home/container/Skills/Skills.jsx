@@ -1,12 +1,11 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import ReactToolTip from 'react-tooltip';
 
-import {AppWrap} from '../../wrapper';
-import {MotionWrap} from '../../wrapper'
+import {AppWrap} from '../../../../wrapper';
+import {MotionWrap} from '../../../../wrapper'
 import "./Skills.scss";
 
-import { skills, experiences } from '../../data.js';
+import { skills, experiences } from '../../../../data';
 
 const Skills = () => {
   return (
@@ -49,14 +48,6 @@ const Skills = () => {
 
                 </motion.div>
 
-                {/* <ReactToolTip
-                  id={work.name}
-                  effect="solid"
-                  arrowColor="#fff"
-                  className="skills-tooltip"
-                >
-                  {work.desc}
-                </ReactToolTip> */}
               </>
             ))}
           </motion.div>

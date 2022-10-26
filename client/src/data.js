@@ -1,5 +1,4 @@
-import {images} from './constants/images'
-
+import { images } from "./assets"
 export const skills = [
     {
       name: "JavaScript",
@@ -11,7 +10,7 @@ export const skills = [
     },
     {
       name: "Node.js",
-      imageUrl: images.node
+      imageUrl: images.nodejs
     },
     {
       name: "Java",
@@ -72,5 +71,5 @@ export const projects = [
     longDesc: "My first group project at Ga Tech. We were tasked with making a single page application while using two public API’s. I was in charge of making the API calls and helping out with other tasks when needed.",
     repo: "https://github.com/StevenLof777/dope-horoscope",
     deployment: "https://stevenlof777.github.io/dope-horoscope/"
-  },
+  }
 ]
