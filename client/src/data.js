@@ -47,7 +47,7 @@ export const experiences = [
     {
       name: "Student (December 2021 - March 2022)",
       company: "Georgia Institute of Technology",
-      desc:"Learned full Stack development using MERN stack technologies. "
+      desc:"Learned Full Stack development using MERN stack technologies. "
     },
     {
       name: "CNC Machinist (June 2020 - June 2021)",
