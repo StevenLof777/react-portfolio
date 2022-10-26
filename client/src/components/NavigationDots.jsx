@@ -1,8 +1,9 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const NavigationDots = ({ active }) => (
   <div className="app__navigation">
-    {['home', 'about', 'work', 'skills', 'contact'].map((item, index) => (
+    {['home', 'about', 'skills', 'work', 'contact'].map((item, index) => (
       <a
         href={`#${item}`}
         key={item + index}
