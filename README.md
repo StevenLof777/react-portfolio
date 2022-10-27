@@ -3,7 +3,7 @@
 Personal Portfolio built in React 18.
 ![Portfolio gif](./client/src/assets/images/Portfolio.gif)
 
-## Tech Stack
+## Tech
 ### Client
 * Framework: React
 * CSS library: Framer Motion
