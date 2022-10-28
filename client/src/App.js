@@ -1,6 +1,6 @@
 import React from 'react'
 import {BrowserRouter, Routes, Route} from 'react-router-dom'
-import { Home, DopeHoroScope } from "./pages"
+import { Home, DopeHoroscope } from "./pages"
 import { Navbar } from "./components"
 import "./App.scss";
 
@@ -11,11 +11,11 @@ const App = () => {
             <Navbar/>
               <Routes>
                 <Route path="/" element={<Home/>}/>
-                <Route path="/dopehoroscope" element={<DopeHoroScope/>}/>
+                <Route path="/dopehoroscope" element={<DopeHoroscope/>}/>
               </Routes>
           </div>
     </BrowserRouter>
   )
 }
 
-export default App
+export default App;
