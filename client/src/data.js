@@ -73,3 +73,14 @@ export const projects = [
     deployment: "https://stevenlof777.github.io/dope-horoscope/"
   }
 ]
+
+export const DopeHoroscopePageData = {
+  title: "Dope Horoscope",
+  description: "Get your daily horoscope and see which celebrities you're compatible with!",
+  tag: "Front-End",
+  imageUrl: images.placeholder,
+  slideShow: [],
+  longDesc: "My first group project at Ga Tech. We were tasked with making a single page application while using two public API’s. I was in charge of making the API calls and helping out with other tasks when needed.",
+  repo: "https://github.com/StevenLof777/dope-horoscope",
+  deployment: "https://stevenlof777.github.io/dope-horoscope/"
+}
