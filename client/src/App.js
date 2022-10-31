@@ -1,8 +1,10 @@
 import React from 'react'
 import {BrowserRouter, Routes, Route} from 'react-router-dom'
-import { Home, DopeHoroscope } from "./pages"
+import { Home, Project } from "./pages"
 import { Navbar } from "./components"
 import "./App.scss";
+
+import { DopeHoroscopeContext } from './context/context';
 
 const App = () => {
   return (
@@ -11,7 +13,11 @@ const App = () => {
             <Navbar/>
               <Routes>
                 <Route path="/" element={<Home/>}/>
-                <Route path="/dopehoroscope" element={<DopeHoroscope/>}/>
+
+                <DopeHoroscopeContext.Provider>
+                  <Route path="/dopehoroscope" element={<Project key={""}/>}/>
+                </DopeHoroscopeContext.Provider>
+
               </Routes>
           </div>
     </BrowserRouter>
