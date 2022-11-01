@@ -1,26 +1,21 @@
 import React from 'react'
-import {BrowserRouter, Routes, Route} from 'react-router-dom'
-import { Home, Project } from "./pages"
+import {BrowserRouter as Router, Routes, Route} from 'react-router-dom'
+import { Home } from "./pages"
+import { Project } from './pages'
 import { Navbar } from "./components"
 import "./App.scss";
 
-import { DopeHoroscopeContext } from './context/context';
+import { DopeHoroscopePageData } from './data'
 
 const App = () => {
   return (
-    <BrowserRouter>
-          <div className='app'>
-            <Navbar/>
-              <Routes>
-                <Route path="/" element={<Home/>}/>
-
-                <DopeHoroscopeContext.Provider>
-                  <Route path="/dopehoroscope" element={<Project key={""}/>}/>
-                </DopeHoroscopeContext.Provider>
-
-              </Routes>
-          </div>
-    </BrowserRouter>
+    <Router>
+      <Navbar/>
+        <Routes>
+          <Route path="/" element={<Home/>}/>
+          <Route path='dopehoroscope' element={<Project projectObj={DopeHoroscopePageData} />}/>
+        </Routes>
+    </Router>
   )
 }
 
