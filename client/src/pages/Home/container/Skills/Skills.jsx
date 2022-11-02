@@ -1,6 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 
+
 import {AppWrap} from '../../../../wrapper';
 import {MotionWrap} from '../../../../wrapper'
 import "./Skills.scss";
@@ -8,19 +9,21 @@ import "./Skills.scss";
 import { skills, experiences } from '../../../../data';
 
 const Skills = () => {
+
   return (
     <>
       <h2 className="head-text">Skills & Experience</h2>
       
-      <div className='app__skills-container'>
+      <div className='app__skills-container' key="project">
         <motion.div className="app__skills-list">
             {skills.map((skills) => (
               <motion.div
-                whileInView={{ opacity: [0, 1] }}
-                transition={{ duration: 0.2 }}
-                className="app__skills-item app__flex"
-                key={skills.name}
+              whileInView={{ opacity: [0, 1] }}
+              transition={{ duration: 0.2 }}
+              className="app__skills-item app__flex"
+              key={skills.name}
               >
+                
                 <div
                   className="app__flex">
                   <img src={skills.imageUrl} alt={skills.name} />
@@ -51,6 +54,8 @@ const Skills = () => {
               </>
             ))}
           </motion.div>
+
+
         </div>
     </>
   )

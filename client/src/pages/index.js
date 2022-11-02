@@ -1,2 +1,2 @@
-export {default as Home } from "./Home/Home"
-export {default as Project } from "./Projects/Project"
+export { Home } from "./Home/Home"
+export { DopeHoroscope } from "./Projects/"

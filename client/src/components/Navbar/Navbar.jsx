@@ -12,10 +12,10 @@ const Navbar = () => {
     <nav className='app__navbar'>
       <ul className='app__navbar-links'>
 
-          <li className='app__flex p-text' key={`link-home`}>
+          {/* <li className='app__flex p-text' key={`link-home`}>
             <div/>
             <Link to="/">home</Link>
-          </li>
+          </li> */}
 
         {["home", "about", "skills", "work", "contact"]
         .map((item)=> 
