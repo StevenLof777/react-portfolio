@@ -6,6 +6,7 @@ import { AppWrap } from '../../../../wrapper';
 import { MotionWrap } from '../../../../wrapper';
 
 import DH from './DH';
+import TeamManager from './TeamManager';
 
 import "./Work.scss"
 
@@ -24,6 +25,7 @@ const Work = () => {;
           whileInView={{x: [0, 0], opacity: [0,1]}}
           >
             <DH/>
+            <TeamManager/>
         </motion.div>
     </>
   )
