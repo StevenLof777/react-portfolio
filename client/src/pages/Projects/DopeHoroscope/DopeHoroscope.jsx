@@ -2,7 +2,7 @@ import React from 'react'
 import { Header } from "./container";
 import { SlideShow } from '../../../components';
 import { Helmet } from 'react-helmet';
-
+import About from './container/About/About';
 import { images } from '../../../assets';
 
 const image ={  
@@ -29,11 +29,10 @@ export const DopeHoroscope = () => {
         <SlideShow
           images = {assets}
         />
+        <About/>
         {/* <Skills/>
         <Work/>
         <Footer/> */}
     </>
   )
 }
-
-export default DopeHoroscope;
