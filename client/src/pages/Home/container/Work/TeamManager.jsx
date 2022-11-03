@@ -9,6 +9,8 @@ import { motion } from "framer-motion"
 import TeamManagerImg from './images/TeamManager.gif'
 import teammangercard from './images/teammangercard.png'
 
+import "./Work.scss"
+
 const TeamManager = () => {
     const [show, setShow] = useState(false);
 
@@ -100,9 +102,9 @@ const TeamManager = () => {
                 </p>
             </Modal.Body>
             <Modal.Footer>
-                <Button variant="secondary" onClick={handleClose}>
+                <button className='button' variant="secondary" onClick={handleClose}>
                     Close
-                </Button>
+                </button >
 
             </Modal.Footer>
         </Modal>

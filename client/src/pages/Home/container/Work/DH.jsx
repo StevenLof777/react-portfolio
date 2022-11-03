@@ -9,6 +9,8 @@ import { motion } from "framer-motion"
 import DopeHoroscope from './images/DopeHoroscope.gif'
 import DHCard from './images/DHCard.png'
 
+import "./Work.scss"
+
 const DH = () => {
     const [show, setShow] = useState(false);
 
@@ -94,9 +96,9 @@ const DH = () => {
                     </p>
             </Modal.Body>
             <Modal.Footer>
-                <Button variant="secondary" onClick={handleClose}>
+                <button className='button' onClick={handleClose}>
                     Close
-                </Button>
+                </button>
 
             </Modal.Footer>
         </Modal>
