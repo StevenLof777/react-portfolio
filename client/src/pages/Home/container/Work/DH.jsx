@@ -7,8 +7,7 @@ import {projects} from '../../../../data.js'
 import { motion } from "framer-motion"
 
 import DopeHoroscope from './images/DopeHoroscope.gif'
-
-import { images } from '../../../../assets/index.js';
+import DHCard from './images/DHCard.png'
 
 const DH = () => {
     const [show, setShow] = useState(false);
@@ -20,7 +19,7 @@ const DH = () => {
     <>
         <div className="app__work-item app__flex" onClick={handleShow}>
             <div className="app__work-img app__flex">
-                <img src={projects[0].imageUrl} alt="place holder img"/>
+                <img src={DHCard} alt="place holder img"/>
                 <motion.div
                     onClick={()=>{console.log("bruh")}}
                     whileHover={{ opacity: [0, 1] }}
