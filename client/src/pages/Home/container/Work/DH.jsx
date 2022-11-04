@@ -96,7 +96,7 @@ const DH = () => {
                     </p>
             </Modal.Body>
             <Modal.Footer>
-                <button className='button' onClick={handleClose}>
+                <button onClick={handleClose}>
                     Close
                 </button>
 

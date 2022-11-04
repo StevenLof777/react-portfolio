@@ -102,7 +102,7 @@ const TeamManager = () => {
                 </p>
             </Modal.Body>
             <Modal.Footer>
-                <button className='button' variant="secondary" onClick={handleClose}>
+                <button  variant="secondary" onClick={handleClose}>
                     Close
                 </button >
 

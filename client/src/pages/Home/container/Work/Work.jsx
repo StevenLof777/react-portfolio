@@ -7,6 +7,7 @@ import { MotionWrap } from '../../../../wrapper';
 
 import DH from './DH';
 import TeamManager from './TeamManager';
+import KB from './KB';
 
 import "./Work.scss"
 
@@ -26,6 +27,7 @@ const Work = () => {;
           >
             <DH/>
             <TeamManager/>
+            <KB/>
         </motion.div>
     </>
   )
