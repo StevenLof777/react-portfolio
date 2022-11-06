@@ -5,7 +5,6 @@ import resume from "./pdfs/FullStack_Resume_Current.pdf"
 import cat from './images/cat-coding.gif'
 import email from './images/email.png';
 import mobile from './images/mobile.png';
-import placeholder from './images/placeholder.jpg';
 
 // Client Tech
 import react from './images/react.png';
@@ -35,7 +34,6 @@ export const images = {
   css,
   html,
   javascript,
-  placeholder,
   sass,
   typescript,
   java,
