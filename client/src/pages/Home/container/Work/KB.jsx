@@ -96,7 +96,7 @@ const KB = () => {
                         Updates
                     </Modal.Header>
                     <p>
-                    For the future of this app I want to add Stripe and other payment methods for purchases. I also plan to make an admin page for adding and updating products
+                    For the future of this app I want to add Stripe and other payment methods for purchases. I also plan to make an admin page for adding and updating products.
                     </p>
             </Modal.Body>
             <Modal.Footer>
