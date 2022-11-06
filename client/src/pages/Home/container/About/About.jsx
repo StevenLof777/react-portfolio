@@ -1,10 +1,10 @@
-import React, { useState, useEffect} from 'react'
+import React from 'react'
 import { motion } from "framer-motion";
 
 import "./About.scss";
 import {AppWrap, MotionWrap} from '../../../../wrapper';
 
-import { abouts } from '../../../../assets';
+// import { abouts } from '../../../../assets';
 
 const About = () => {
 
