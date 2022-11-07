@@ -8,7 +8,7 @@ import { motion } from "framer-motion"
 
 import kbcard from './images/kbcard.png'
 import kbsearch from './images/kbsearch.gif'
-import kblogin from './images/kblogin.gif'
+// import kblogin from './images/kblogin.gif'
 import kbaddtocart from './images/kbaddtocart.gif'
 
 import "./Work.scss"
