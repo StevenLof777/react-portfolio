@@ -1,6 +1,3 @@
-// PDFs
-import resume from "./pdfs/FullStack_Resume_Current.pdf"
-
 // Misc
 import cat from './images/cat-coding.gif'
 import email from './images/email.png';
@@ -45,7 +42,3 @@ export const images = {
   python,
   springBoot
 };
-
-export const pdfs = {
-  resume
-}
