@@ -52,15 +52,14 @@ const KB = () => {
             <Modal.Body>
         
                 <img alt="KickBacks search gif" src={kbsearch}/> 
-                <img alt="KicBacks add to cart gif" src={kbaddtocart}/> 
-                <img alt="KicBacks login gif" src={kblogin}/> 
+                <img alt="KicBacks add to cart gif" src={kbaddtocart}/>
 
                 
 
                 <Modal.Header>
                     <p>
-                        <a href="https://github.com/StevenLof777/KickBacks" target="blank">Repo</a>
-                    </p>    
+                        <a href="https://github.com/StevenLof777/KickBacks" target="blank">Repo</a> / <a href="https://kickbacks.herokuapp.com/" target="blank">Demo</a>
+                    </p> 
                 </Modal.Header>
 
                 
