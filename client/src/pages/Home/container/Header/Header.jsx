@@ -43,7 +43,7 @@ const Header = () => {
         className=""
         >
         <p className='header-p-text'><br />
-            <a href="https://docs.google.com/document/d/e/2PACX-1vSsKNB0PTsLElapRNXKCmAdG5QzXzGmHhNmO0y_1wIPsDaDjRd_GlbaDKm_4ZTK2JC-Q5r9XJ6NTuWU/pub" className='resume' target="_blank" rel="noreferrer">Resume</a>
+            <a href="https://docs.google.com/document/d/1xZHrjeg3gieolW07V08i6xvpR8LUsPFvvSmejTiX8PA/edit?usp=sharing" className='resume' target="_blank" rel="noreferrer">Resume</a>
         </p>
       </motion.div>
 
